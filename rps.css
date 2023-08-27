@@ -1,0 +1,36 @@
+body{
+    background: rgb(22, 22, 22);
+    color:white;
+    font-family: Arial;
+}
+.paper ,
+.scissors ,
+.rock{
+    border-radius:60px;
+    background-color:rgb(34, 33, 33);
+    font-size: 50px;
+    border:1px solid white;
+    width:120px;
+    height:120px;
+    cursor: pointer;
+}
+.Sresult{
+    font-size: 26px;
+}
+.reset{
+   font-size:15px;
+   border:none;
+   padding:10px;
+   cursor:pointer
+  
+}
+.reset:hover{
+    color:red;
+}
+.autoplay{
+    font-size:15px;
+    border:none;
+    padding:10px;
+    cursor:pointer
+   
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            rock-paper-scissors
+        </title>
+    </head>
+    <body>
+        <p>Rock-paper-scissors</p>
+        <button title="rock" onclick="
+            const randomNum=Math.random();
+            let move=''
+            let result=''
+            if (randomNum<=1/3){
+                move='rock';
+            }
+            else if (  randomNum >1/3 && randomNum<=2/3   ){
+                move='sicssors';
+            }
+            else{
+                move='paper';
+            }
+            console.log(move);
+            
+            if (move==='rock'){
+                result='it is a tie.';
+           }
+            else if (move==='sicssors'){
+                result='you win.';
+           }
+            else {
+                result='you lose.';
+           }
+           alert('You picked rock and The computer picked '+`${move}` + '. Therefore ' + result);
+        ">Rock</button>
+       
+       
+       <button title="paper" onclick="
+            randomNum=Math.random();
+            if (randomNum<=1/3){
+                move='rock';
+            }
+            else if (  randomNum >1/3 && randomNum<=2/3   ){
+                move='sicssors';
+            }
+            else{
+                move='paper';
+            }
+            console.log(move);
+            
+            if (move==='paper'){
+                result='it is a tie.';
+           }
+            else if (move==='rock'){
+                result='you win.';
+           }
+            else {
+                result='you lose.';
+           }
+           alert('You picked paper and The computer picked '+`${move}` + '. Therefore ' + result);       ">paper</button>
+
+        <button title="scissors" onclick="
+            randomNum=Math.random();
+            if (randomNum<=1/3){
+                move='rock';
+            }
+            else if (  randomNum >1/3 && randomNum<=2/3   ){
+                move='sicssors';
+            }
+            else{
+                move='paper';
+            }
+            console.log(move);
+            
+            if (move==='sicssors'){
+                result='it is a tie.';
+           }
+            else if (move==='paper'){
+                result='you win.';
+           }
+            else {
+                result='you lose.';
+           }
+           alert('You picked scissors and The computer picked '+`${move}` + '. Therefore ' + result);">scissors</button>
+
+        <script>
+            
+        </script>
+    </body>
+</html>
