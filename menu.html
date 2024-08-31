@@ -1,21 +1,559 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Menu</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+         
+        <!-- Latest compiled and minified JavaScript -->
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+         
+        <title>menus</title>
+        <link rel="icon" type="images/x-icon" href="https://www.iconarchive.com/download/i90283/icons8/windows-8/City-Restaurant.ico" />
+        
+        <style>
+           body{
+
+                background-color: rgb(85, 84, 84);
+                
+            }
+            .wrap{
+                margin:auto;      
+                padding-top: 100px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;     
+                color:white;
+                
+
+            }
+        
+            .navbar{
+                display:flex;
+                padding:20px;
+                background-color: #4d001c;  
+            }
+            a{
+               
+            }
+            bar{
+                width: 30px;
+                height: 5px;
+                background-color: rgb(85, 84, 84);
+                margin: 6px 0;
+                display: block
+                
+            }
+            .dropdown{
+            
+            }
+            .name{
+                display: flex;
+                flex:1;
+                
+                padding-left: 30px;
+                font-size: 30px;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .obutton{
+                height:100%;
+                width:100%;
+                background-color:rgb(85, 84, 84) ;
+                border:none;
+                border-right: solid;
+                border-color: rgb(255, 255, 255);
+                border-width: 2px;
+                font-size: 20px;
+            }
+
+            .obutton:hover{
+                background-color: #4d001c;
+            }
+            
+         
+            .list{
+                height:40px;
+                width: 800px;
+                background-color: rgb(85, 84, 84);
+                
+                
+            }
+            
+            .signup{
+                padding:5px 20px 5px 20px;
+                background-color:rgb(85, 84, 84) ;
+                border:solid;
+                color: white;
+                border-color: rgb(255, 255, 255);
+                border-width: 2px;
+            }
+            .wgrid{
+                width:auto;
+            }
+
+            .signup:hover{
+                background-color: #4d001c;
+            }
+
+            .thumbnail{
+                width:100%;
+                
+            }
+            .trow{
+                position:relative;
+            }
+            .vtitle{
+                width:100%;
+                font-weight:bold;
+                font-family:roboto,Arial;
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom:5px;
+            }
+            
+
+            .blogo{
+                vertical-align: top;
+                
+            }
+            .vbox{
+                z-index: 1;
+                
+            }
+            .grid{
+                border:solid;
+                display: grid;
+                grid-template-columns: auto 1fr;
+            }
+            
+            
+
+    
+            .blogo{
+               background-color: #fff;
+               
+            }
+            .blogo :hover{
+                background-color:#4d001c;
+
+            }
+            .vbox{
+                margin-left:auto;
+                padding-top:10px
+            }
+            .vtbox{
+                padding-left: auto;
+            }
+            .author{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 12px;
+            }
+            .vstatus{
+            font-size: 11px;
+            color:white;
+            }
+            .wgrid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 10px;
+            
+            }
+            .time{
+                background: black;
+                color:white;
+                position:absolute;
+                bottom: 2px;
+                right:3px;
+                border-radius: 4px;
+                
+
+            }
+            .adr{
+                padding: 100px;
+                
+                
+            }
+
+
+        </style>
+    
     </head>
+
+
+
     <body>
-        <a href="restaurant.html">Home</a>
-        <p>
-            <ul><dt><h1>Menu</h1></dt>
-                <dd><h4>Our menu at Gourmet Delights is thoughtfully designed to tantalize the taste buds of our discerning customers. We offer a diverse selection of appetizers, entrees, and desserts, each prepared with the utmost attention to detail. From succulent seafood delicacies to perfectly cooked meats, vegetarian delights, and gluten-free options, there is something to please every palate.</h4>
-                </dd>
-            </ul>
-        <img src="menu.jfif" style="width:800px; padding-left:250px;">
-        </p>
-        <input value="blue" 
-type="radio"
- 
-name="color"
->
-    </body>
+        <div class="wrap">
+            <nav class=" navbar navbar-default navbar-fixed-top"> 
+                <div class="navbar-nav navbar-left">
+                    <a class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <div>
+                            <bar></bar>
+                            <bar></bar>
+                            <bar></bar>
+                        </div>
+                        
+                        <ul class="dropdown-menu">
+                            <li class="list-box" href="#">
+                                <a class="list" href="index.html">HOME</a>
+                                <a class="list" href="menu.html">MENUS</a>
+                                <a class="list" href="order.html">ORDER ONLINE</a>
+                                <a class="list" href="cook-with-us.html">COOK WITH US</a>
+                                <a class="list" href="history.html">HISTORY</a>
+                                <a class="list" href="#address">ABOUT</a>
+                                <a class="list" href="login.html">SIGNUP/LOGIN</a>
+                                
+                            </li>
+                        </a>
+                        </ul>
+                        
+                    </a>
+    
+                </div>
+                <div class="name">
+                    Herica restaurant
+                </div>
+                <div class="navbar-nav navbar-right">
+                    <a href="signup.html"><button  class="signup ">🛒<span class="quantity">0</span></button></a>
+
+                </div>
+    
+            </nav>
+            <intro>
+               <h1>MENUS</h1><hr>
+               <main class="wgrid">
+                <h2>APETIZER</h2><hr> <hr>
+                <section class="vbox">
+                    <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80">
+                        <div class="time">350$</div></div>
+                    </div>
+                        <div class="grid">
+                            <div class="blogo"> <button class="obutton">🛒</button>
+                            </div>
+                            <div class="vtbox">
+                            <p class="vtitle" >VEGGIES</p>
+                            <p class="author">FOR VEGANS</p>
+                            <P class="vstatus">1.4M VIEWS &#183; 1.1M ORDERS</P>
+                            </div>
+                        </div>  
+                </section>
+                <section class="vbox">
+                    <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80">
+                        <div class="time">370$</div></div>
+                    </div>
+                        <div class="grid">
+                            <div class="blogo"> <button class="obutton">🛒</button>
+                            </div>
+                            <div class="vtbox">
+                            <p class="vtitle" >SWEETS</p>
+                            <p class="author">FOR SWEET LOVERS</p>
+                            <P class="vstatus">2M VIEWS &#183; 1.9 ORDERS</P>
+                            </div>
+                        </div>  
+                </section>
+                <section class="vbox">
+                    <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1505253668822-42074d58a7c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80">
+                        <div class="time">400$</div></div>
+                    </div>
+                        <div class="grid">
+                            <div class="blogo"> <button class="obutton">🛒</button>
+                            </div>
+                            <div class="vtbox">
+                            <p class="vtitle" >SOUP </p>
+                            <p class="author">FOR SOUP LOVERS</p>
+                            <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                            </div>
+                        </div>  
+                </section>
+                
+                <h2>ON TRAY</h2><hr><hr>
+                <div class="vbox">
+                    <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80">
+                        <div class="time">500$</div></div>
+                    </div>
+                        <div class="grid">
+                            <div class="blogo"> <button class="obutton">🛒</button>
+                            </div>
+                            <div class="vtbox">
+                            <p class="vtitle" >food name</p>
+                            <p class="author">for who</p>
+                            <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                            </div>
+                        </div>  
+                    
+                </div>
+                <div class="vbox">
+                    <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1502998070258-dc1338445ac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=979&q=80">
+                        <div class="time">500$</div></div>
+                    </div>
+                        <div class="grid">
+                            <div class="blogo"> <button class="obutton">🛒</button>
+                            </div>
+                            <div class="vtbox">
+                            <p class="vtitle" >food name</p>
+                            <p class="author">for who</p>
+                            <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                            </div>
+                        </div> 
+                </div>
+                <div class="vbox">
+                    <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1568376794508-ae52c6ab3929?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80 ">
+                        <div class="time">500$</div></div>
+                    </div>
+                        <div class="grid">
+                            <div class="blogo"> <button class="obutton">🛒</button>
+                            </div>
+                            <div class="vtbox">
+                            <p class="vtitle" >food name</p>
+                            <p class="author">for who</p>
+                            <P class="vstatus"> 3M VIEWS &#183; 2M ORDERS</P>
+                            </div>
+                        </div>
+                </div>
+                <div class="vbox">
+                    <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1556040220-4096d522378d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80">
+                        <div class="time">500$</div></div>
+                    </div>
+                        <div class="grid">
+                            <div class="blogo"> <button class="obutton">🛒</button>
+                            </div>
+                            <div class="vtbox">
+                            <p class="vtitle" >food name</p>
+                            <p class="author">for who</p>
+                            <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                            </div>
+                        </div> 
+                </div>
+                <section class="vbox">
+                    <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1515668236457-83c3b8764839?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80">
+                        <div class="time">500$</div></div>
+                    </div>
+                        <div class="grid">
+                            <div class="blogo"> <button class="obutton">🛒</button>
+                            </div>
+                            <div class="vtbox">
+                            <p class="vtitle" >food name</p>
+                            <p class="author">for who</p>
+                            <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                            </div>
+                        </div>   
+                    </section>
+                <section class="vbox">
+                    <div class="trow"><div><img class="thumbnail" src="https://plus.unsplash.com/premium_photo-1663036447682-8f0d918adbed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80">
+                        <div class="time">500$</div></div>
+                    </div>
+                        <div class="grid">
+                            <div class="blogo"> <button class="obutton">🛒</button>
+                            </div>
+                            <div class="vtbox">
+                            <p class="vtitle" >food name</p>
+                            <p class="author">for who</p>
+                            <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                            </div>
+                        </div>  
+                </section>
+                <section class="vbox">
+                    <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1010&q=80">
+                        <div class="time">500$</div></div>
+                    </div>
+                        <div class="grid">
+                            <div class="blogo"> <button class="obutton">🛒</button>
+                            </div>
+                            <div class="vtbox">
+                            <p class="vtitle" >food name</p>
+                            <p class="author">for who</p>
+                            <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                            </div>
+                        </div>  
+                </section>
+                <section class="vbox">
+                    <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1626056087729-a1f5c1a7d90d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1009&q=80">
+                        <div class="time">500$</div></div>
+                    </div>
+                        <div class="grid">
+                            <div class="blogo"> <button class="obutton">🛒</button>
+                            </div>
+                            <div class="vtbox">
+                            <p class="vtitle" >food name</p>
+                            <p class="author">for who</p>
+                            <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                            </div>
+                        </div>  
+                </section>
+                <section class="vbox">
+                    <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1526318896980-cf78c088247c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHJlc3RhdXJhbnQlMjBmb29kfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60">
+                        <div class="time">500$</div></div>
+                    </div>
+                        <div class="grid">
+                            <div class="blogo"> <button class="obutton">🛒</button>
+                            </div>
+                            <div class="vtbox">
+                            <p class="vtitle" >food name</p>
+                            <p class="author">for who</p>
+                            <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                            </div>
+                        </div>  
+                </section>
+                <h2>DESERT</h2><hr><hr>
+                <section class="vbox">
+                    <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1589899475988-9e0a4a040b2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGRlc2VydCUyMGZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60">
+                        <div class="time">500$</div></div>
+                    </div>
+                        <div class="grid">
+                            <div class="blogo"> <button class="obutton">🛒</button>
+                            </div>
+                            <div class="vtbox">
+                            <p class="vtitle" >food name</p>
+                            <p class="author">for who</p>
+                            <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                            </div>
+                        </div>  
+                </section>
+                <section class="vbox">
+                    <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1622620834270-05490cd7ba79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGRlc2VydCUyMGZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60">
+                        <div class="time">500$</div></div>
+                    </div>
+                        <div class="grid">
+                            <div class="blogo"> <button class="obutton">🛒</button>
+                            </div>
+                            <div class="vtbox">
+                            <p class="vtitle" >food name</p>
+                            <p class="author">for who</p>
+                            <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                            </div>
+                        </div>  
+                </section>
+                <section class="vbox">
+                    <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1622494828558-d3614f72b67e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGRlc2VydCUyMGZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60">
+                        <div class="time">500$</div></div>
+                    </div>
+                        <div class="grid">
+                            <div class="blogo"> <button class="obutton">🛒</button>
+                            </div>
+                            <div class="vtbox">
+                            <p class="vtitle" >food name</p>
+                            <p class="author">for who</p>
+                            <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                            </div>
+                        </div>  
+                </section>
+                <h2>DRINKS</h2><hr><hr>
+                    
+                    <section class="vbox">
+                        <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1613313480130-6839673b6a84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGFsY2hvbGljJTIwZHJpbmtzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60">
+                            <div class="time">500$</div></div>
+                        </div>
+                            <div class="grid">
+                                <div class="blogo"> <button class="obutton">🛒</button>
+                                </div>
+                                <div class="vtbox">
+                                <p class="vtitle" >food name</p>
+                                <p class="author">for who</p>
+                                <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                                </div>
+                            </div>  
+                    </section>
+                    <section class="vbox">
+                        <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1618513033174-cfe319656ea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YWxjaG9saWMlMjBkcmlua3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60">
+                            <div class="time">500$</div></div>
+                        </div>
+                            <div class="grid">
+                                <div class="blogo"> <button class="obutton">🛒</button>
+                                </div>
+                                <div class="vtbox">
+                                <p class="vtitle" >food name</p>
+                                <p class="author">for who</p>
+                                <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                                </div>
+                            </div>  
+                    </section>
+                    <section class="vbox">
+                        <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1559842438-2942c907c8fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGFsY2hvbGljJTIwZHJpbmtzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60">
+                            <div class="time">500$</div></div>
+                        </div>
+                            <div class="grid">
+                                <div class="blogo"> <button class="obutton">🛒</button>
+                                </div>
+                                <div class="vtbox">
+                                <p class="vtitle" >food name</p>
+                                <p class="author">for who</p>
+                                <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                                </div>
+                            </div>  
+                    </section>
+                    <section class="vbox">
+                        <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzZ8fGFsY2hvbGljJTIwZHJpbmtzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60">
+                            <div class="time">500$</div></div>
+                        </div>
+                            <div class="grid">
+                                <div class="blogo"> <button class="obutton">🛒</button>
+                                </div>
+                                <div class="vtbox">
+                                <p class="vtitle" >food name</p>
+                                <p class="author">for who</p>
+                                <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                                </div>
+                            </div>  
+                    </section>
+                    <section class="vbox">
+                        <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1666307598069-f4d4e53bb5e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjA4fHxhbGNob2xpYyUyMGRyaW5rc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60">
+                            <div class="time">500$</div></div>
+                        </div>
+                            <div class="grid">
+                                <div class="blogo"> <button class="obutton">🛒</button>
+                                </div>
+                                <div class="vtbox">
+                                <p class="vtitle" >food name</p>
+                                <p class="author">for who</p>
+                                <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                                </div>
+                            </div>  
+                    </section>
+                    <section class="vbox">
+                        <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1571079973850-61d8ce8476fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjI5fHxhbGNob2xpYyUyMGRyaW5rc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60">
+                            <div class="time">500$</div></div>
+                        </div>
+                            <div class="grid">
+                                <div class="blogo"> <button class="obutton">🛒</button>
+                                </div>
+                                <div class="vtbox">
+                                <p class="vtitle" >food name</p>
+                                <p class="author">for who</p>
+                                <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                                </div>
+                            </div>  
+                    </section>
+                    <section class="vbox">
+                        <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1626167344497-9bca3a0c878b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjUzfHxhbGNob2xpYyUyMGRyaW5rc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60">
+                            <div class="time">500$</div></div>
+                        </div>
+                            <div class="grid">
+                                <div class="blogo"> <button class="obutton">🛒</button>
+                                </div>
+                                <div class="vtbox">
+                                <p class="vtitle" >food name</p>
+                                <p class="author">for who</p>
+                                <P class="vstatus">3M VIEWS &#183; 2M ORDERS</P>
+                                </div>
+                            </div>  
+                    </section>
+            </main>
+
+
+            <adress class="adr">
+            <h2 id="address">About us </h2>
+                     <a href="https://www.google.com/search?client=opera&q=topten+fancy+restaurant&sourceid=opera&ie=UTF-8&oe=UTF-8#rlimm=13401366916288306172">Location</a>
+                     <br>
+                     <a href="mailto:herieshetu@gmail.com">Send mail</a><br>
+                    contact: +25180499718 
+                </adress>
+            
+    
+        </div>
+        
+</body>
 </html>

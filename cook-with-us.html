@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+         
+        <!-- Latest compiled and minified JavaScript -->
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+         
+        <title>Cook with us</title>
+        <link rel="icon" type="images/x-icon" href="https://www.iconarchive.com/download/i90283/icons8/windows-8/City-Restaurant.ico" />
+        
+        <style>
+           body{
+                background-color: rgb(85, 84, 84);
+                
+            }
+            .wrap{
+                margin:auto; 
+                padding: 10px;
+                padding-top:100px;    
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;     
+                color:white;
+                
+
+            }
+        
+            .navbar{
+                display:flex;
+                padding:20px;
+                background-color: #4d001c;  
+            }
+            
+
+            bar{
+                width: 30px;
+                height: 5px;
+                background-color: rgb(85, 84, 84);
+                margin: 6px 0;
+                display: block
+                
+            }
+           
+            .name{
+                display: flex;
+                flex:1;
+                padding-left: 30px;
+                font-size: 30px;
+                font-family:'Times New Roman', Times, serif;
+            }
+         
+            .list{
+                height:40px;
+                width: 800px;
+                background-color: rgb(85, 84, 84);
+                
+                
+            }
+            .phar{
+                display:flex;
+                flex-shrink: 0;
+                border: solid;
+                padding:30px;
+                margin:20px;
+                font-size: larger;
+                line-height: 30px;
+                min-width: 300px;
+            
+            }
+            
+            .obutton{
+                height:100%;
+                width:100%;
+                background-color:rgb(85, 84, 84) ;
+                border:none;
+                border-right: solid;
+                border-color: rgb(255, 255, 255);
+                border-width: 2px;
+                font-size: 10px;
+            }
+
+            .obutton:hover{
+                background-color: #4d001c;
+            }
+            
+         
+            .list{
+                height:40px;
+                width: 800px;
+                background-color: rgb(85, 84, 84);
+                
+                
+            }
+            
+            .signup{
+                padding:5px 20px 5px 20px;
+                background-color:rgb(85, 84, 84) ;
+                border:solid;
+                color: white;
+                border-color: rgb(255, 255, 255);
+                border-width: 2px;
+            }
+
+            .signup:hover{
+                background-color: #4d001c;
+            }
+
+            
+            .thumbnail{
+                width:100%;
+                
+            }
+            .trow{
+                position:relative;
+            }
+            .vtitle{
+                width:100%;
+                font-weight:bold;
+                font-family:roboto,Arial;
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom:5px;
+            }
+            
+
+            .blogo{
+                vertical-align: top;
+                
+            }
+            .vbox{
+                z-index: 1;
+                
+            }
+            .grid{
+                border:solid;
+                display: grid;
+                grid-template-columns: 40px 1fr;
+            }
+            
+            
+
+    
+            .blogo{
+               background-color: #fff;
+               
+            }
+            .blogo :hover{
+                background-color:#4d001c;
+
+            }
+            .vbox{
+                margin:auto;
+            }
+            .vtbox{
+                padding-left: 10px;
+            }
+            .author{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 12px;
+            }
+            .vstatus{
+            font-size: 12px;
+            color:white;
+            }
+            .wgrid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            }
+            .adr{
+                padding: 10px; 
+            }
+
+
+        </style>
+    
+    </head>
+
+
+
+    <body>
+        <div class="wrap">
+            <nav class=" navbar navbar-default navbar-fixed-top"> 
+                <div class="navbar-nav navbar-left">
+                    <a class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <div>
+                            <bar></bar>
+                            <bar></bar>
+                            <bar></bar>
+                        </div>
+                        
+                        <ul class="dropdown-menu">
+                            <li class="list-box" href="#">
+                                <a class="list" href="index.html">HOME</a>
+                                <a class="list" href="menu.html">MENUS</a>
+                                <a class="list" href="order.html">ORDER ONLINE</a>
+                                <a class="list" href="cook-with-us.html">COOK WITH US</a>
+                                <a class="list" href="history.html">HISTORY</a>
+                                <a class="list" href="#address">ABOUT</a>
+                                <a class="list" href="login.html">SIGNUP/LOGIN</a>
+                                
+                            </li>
+                        </a>
+                        </ul>
+                        
+                        
+                    </a>
+    
+                </div>
+                <div class="name">
+                    Herica restaurant
+                </div>
+                <div class="navbar-nav navbar-right">
+                    <a href="signup.html"><button  class="signup ">SIGN UP</button></a>
+                </div>
+    
+            </nav>
+            <intro>
+               <h1>WANT TO LEARN COOKING ?</h1><hr>
+               <div class="phar">
+               Indulge and learn simultaneously at our extraordinary establishment that goes beyond the typical dining experience. 
+                Our restaurant isn't just a place to savor delectable flavors; it's also a hub of culinary education.
+                Embark on an exciting journey with our immersive cooking courses,
+                 where you'll uncover the secrets behind the art of crafting exquisite dishes.
+                 Under the guidance of our skilled chefs, participants delve into the world of culinary techniques,
+                  ingredient sourcing, and flavor harmonies. 
+                  Whether you're a novice or a seasoned home cook, 
+                  our tailored courses cater to all skill levels, ensuring a hands-on and enriching encounter.
+                 Come share in our passion for exceptional cuisine as we empower you to create culinary masterpieces right in your own kitchen.
+                </div>
+              
+            </intro>
+            <div>
+                <h2>Our well known chefs </h2>
+                <main class="wgrid">
+                    <section class="vbox">
+                        <div class="trow"><div><img class="thumbnail" src="https://plus.unsplash.com/premium_photo-1661778091956-15dbe6e47442?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzh8fGNoZWZ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60">
+                        </div>
+                            <div class="grid">
+                                <div class="vtbox">
+                                <p class="vtitle" >NAME</p>
+                                <p class="author">AGE</p>
+                                <P class="vstatus">YEARS OF EXPERIENCE &#183; 1.1M ORDERS</P>
+                                </div>
+                            </div>  
+                    </section>
+                    <section class="vbox">
+                        <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1566554273541-37a9ca77b91f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNoZWZ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60">
+                        </div>
+                            <div class="grid">
+                                <div class="vtbox">
+                                <div class="vtitle" >NAME</div>
+                                <p class="author">AGE</p>
+                                <P class="vstatus">YEARS OF EXPERIENCE &#183; 1.9M ORDERS</P>
+                                </div>
+                            </div>  
+                    </section>
+                    <section class="vbox">
+                        <div class="trow"><div><img class="thumbnail" src="https://images.unsplash.com/photo-1574966740637-12c84035a4f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fGNoZWZ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60">
+                        </div>
+                            <div class="grid">
+                                <div class="vtbox">
+                                    <div class="vtitle" >NAME</div>
+                                    <p class="author">AGE</p>
+                                    <P class="vstatus">YEARS OF EXPERIENCE &#183; 1.9M ORDERS</P>
+                                </div>
+                            </div>  
+                    </section>
+            </div>
+            <h2 style="text-align: center;">
+                <a href="register.html" style="color:#4d001c; text-decoration: underline;">
+                    Register to start class >>
+                </a>
+            </h2>
+
+            <h2 style="text-align: center;">
+                <a href="https://youtu.be/mcSugD-uNKM?si=rzJy2mteJq_AB-PK" style="color:#4d001c; text-decoration: underline;">
+                    Join our free class  >>
+                </a>
+            </h2>
+            
+            <adress class="adr">
+            <h2 id="address">About us </h2>
+                     <a href="https://www.google.com/search?client=opera&q=topten+fancy+restaurant&sourceid=opera&ie=UTF-8&oe=UTF-8#rlimm=13401366916288306172">Location</a>
+                     <br>
+                     <a href="mailto:herieshetu@gmail.com">Send mail</a><br>
+                    contact: +25180499718 
+                </adress>
+    
+        </div>
+        
+</body>
+</html>

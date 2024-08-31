@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+         
+        <!-- Latest compiled and minified JavaScript -->
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+         
+        <title>online-order</title>
+        <link rel="icon" type="images/x-icon" href="https://www.iconarchive.com/download/i90283/icons8/windows-8/City-Restaurant.ico" />
+    
+        <style>
+             body{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: white;
+                background-color: rgb(85, 84, 84);
+                text-align: center;
+                
+            }
+            .wrap{
+                max-width:600px;
+                min-height:1000px;
+                background-color: #4d001c;
+                margin:auto;
+                padding:0px 10px 100px 10px;  
+                text-align: center;
+            }
+            div{
+                padding-top: 20px;
+            }
+            h1{
+                line-height: 30px;
+            }
+
+            button{
+                width:100%;
+                height:40px;
+                background-color: #4d001c;
+                border-color: white;
+            }
+            button:hover{
+                background-color:#6e032a;
+                color:white;
+            }
+
+            .glogo{
+                width:20px;
+                height:20px;
+            }
+            .from-group{
+                text-align: left;
+            }
+            input{
+                width:100%;
+                background-color:#4d001c;
+                border-color: white;
+                color:white;
+
+            }
+            select{
+                background-color:#4d001c;
+                border-color: white;
+                color:white;
+            }
+        </style>
+    </head>   
+
+    <body>
+        <div class="wrap">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <h2>🍽</h2>
+                    <h1>Form</h1><hr>
+                    <h5>Please fill the form.</h5>
+                    <div>
+                    <form >
+                        <div class="from-group">
+                            <label for="Name">Full name</label><br>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="from-group">
+                            <label for="email">E-mail</label><br>
+                            <input type="text" name="email" placeholder="example@gmail.com">
+                        </div>
+                        <div class="from-group">
+                            <label for="parking ">Phone number</label><br>
+                            <input type="tel">
+                        </div> 
+                        <div class="from-group">
+                            <label for="city">Location</label><br>
+                            <select name="city" id="">
+                                <option>Addis Ababa</option>
+                                <option>Bahirdar</option>
+                                <option>Harar</option>
+                                <option>Mekele</option>
+                                <option>Adama</option>
+                                <option>Semera</option>
+                            </select>
+                        </div>
+                        <div class="from-group">
+                            <label for="cart">Your cart</label><br>
+                            <select name="cart" id="">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>10</option>
+                            </select>
+                        </div>
+
+                        <div class="from-group">
+                            <label for="num-ppl">Quantity</label><br>
+                            <select name="num-ppl" id="">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>10</option>
+                            </select>
+                        </div>
+                        <div class="from-group">
+                            <label for="date ">Date</label><br>
+                            <input type="date" class="date-input">
+                        </div>
+                        <div class="from-group">
+                            <label for="time ">Time</label><br>
+                            <input type="time" class="time-input">
+                        </div>
+
+                        <div class="col-sm-2"></div>
+                    </form>
+                </div>
+                <div class="">
+                    <br>
+                    <button>Order</button>
+                </div>
+                <div>
+                    <h5 style="text-align: center;">For more info <a style="text-decoration: underline;" href="#address">contact us </a></h5>
+                </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+         
+        <!-- Latest compiled and minified JavaScript -->
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+         
+        <title>sign-up</title>
+        <link rel="icon" type="images/x-icon" href="https://www.iconarchive.com/download/i90283/icons8/windows-8/City-Restaurant.ico" />
+    
+        <style>
+             body{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: white;
+                background-color: rgb(85, 84, 84);
+                text-align: center;
+                
+            }
+            .wrap{
+                max-width:600px;
+                height:100% ;
+                background-color: #4d001c;
+                margin:auto;
+                padding:0px 10px 100px 10px;
+                text-align: center;
+            }
+            div{
+                padding-top: 20px;
+            }
+            h1{
+                line-height: 30px;
+            }
+
+            button{
+                width:100%;
+                height:40px;
+                background-color: #4d001c;
+                border-color: white;
+            }
+            button:hover{
+                background-color:#6e032a;
+                color:white;
+            }
+
+            .glogo{
+                width:20px;
+                height:20px;
+            }
+            .from-group{
+                text-align: left;
+            }
+            input{
+                width:100%;
+                background-color:#4d001c;
+                border-color: white;
+                color:white;
+
+            }
+        </style>
+    </head>   
+
+    <body>
+        <div class="wrap">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <h2>🍽</h2>
+                    <h1>sign-up</h1><hr>
+                    <h5>Welcome.</h5>
+                    <div>
+                    <button><img class='glogo' src="data:image/png;base64,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">   Sign-up with Google</button>
+                    </div>
+                    <h5>OR</h5>
+                    <div>
+                    <button><img class='glogo' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAD30lEQVR4AayShW4cMRCGLQgzHArKDK9xor5KnyDMSZmZmZmZRWWuKMy8e3y7U8/KvXG6PlR+6dM3Wtv/tElYulnzHXI918HnvQZ7PNfgGfdvz1XQEJzFtz14B++y+crCO+D2XoG97ssw475swhwuGWSOK26T3zX24luWbZbehTxe1uS+YOiuCzGwOB+3mA2yAvcFU8cO7Mrsf30R3Lz4nfMcL+eglZyNkm3QGXZhJ0snzrOw3nE61uc4zQs4wmKOxC3PaIszZA4/I2On6zSsY8ni4P9Kx6loX/WJMCCOk5G47dCZ+r79HLtxR8LfueN45F318TDEORYiW4TJHBcvbf8QhT/TJoRiJkQME2bCJvRpJnwaM8TbuX24Q/k3wS82VR0JwRwOB8nSjF5xJgRvhgxIEtEj3kngLibHcQzc1YdDetWhICSj8iD5UW8MUsX+PoBGdNzJ/qXqQHBv5f4AVHCEBX4yp1LMG26EIJ2I+2hpFn18J8OsuQi5lXv9MxV7/ZAul35HIY0k7cCduJtV7tN95bt0sNgdt5g1sjR/GrX/+E9+j8DyI35xV7eh6q/cpftY2Q5tDwfSoVxYj5jwf5Yf4qV0j+bknXtY2bbZZxxIh9KtlkERfjaD52QFcgdSvl17xkq3zP4u3TwDSAlZAZ2pgmeZgrtZ6aZpraRrGpR0kuVZFTpXv1eBu1lpx5RW3DEFFu1kmWzSM21AiehC04wWc/uUxorbpn4XtU6CiuLWKcvZ5HVPxN7ZQkZwNytqnnxW1DwBSGETWSabnPsSkjuV4G5W2DC+hwPJyCZdL/22ngLJYt7DihonfAW1Y2BRR5bJJhtvaeL9OFoJ7mZrGiC3sHb8b6vlcdswFATRL2ZCDagAX12H+3DOOWe7A8d2fFQZlsRMXpzu6z8kVnGdPcDgDbRJ5InP/nFB3lFOTMlck1TVuW8gD8wzcRO3FeQfFvfeQUbeQU5M2K0yOGBJXlVjcmaO1HFTsernecPZTd/c3ZQ0CeTM7M+S3L0MNWbpT/a94abql7ebXDrburidECiZa5LsspZUZO+kzNI2Z31r9JPsmlx7M2namzHZG7J1vaQkp6qBff09csYN3FKS6jt5w1mPA2stos8sCb/b6zFzIPMcduOG+kzORjpurUaBtRKRuRwSsz8LqnpWQuaoV8MAu9V3VF/MG9Zi2DQXAxrwUlhSENeZA7aWwyY/+bc1tkKu/hOXxkLwZswHVLlTUlINNW0mjFnswC71W+FtGLOd+9ps+7k2qw/MtEmSrlNZB+c6z5jBrPo3nZNjzXQm1FTrjgSp6dYDakr3oFd9U+9y1lO9tTZT6gAAAABJRU5ErkJggg==">   Sign-up with Facebook</button>
+                    </div>
+                    <h5>OR</h5>
+
+                    <form >
+                        <div class="from-group">
+                            <label for="Name">Full name</label><br>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="from-group">
+                            <label for="email">E-mail</label><br>
+                            <input type="text" name="email" placeholder="example@gmail.com">
+                        <div class="from-group">
+                            <label for="pswrd">Password</label><br>
+                            <input type="text" name="password" >
+                        <div class="col-sm-2"></div>
+                    </form>
+                </div>
+                <div class="">
+                    <br>
+                    <button>sign-in</button>
+                </div>
+                <div>
+                    <h5 style="text-align: center;">Aleady have an account? <a style="text-decoration: underline;" href="login.html">Log-in</a></h5>
+                </div>
+        </div>
+    </body>
+</html>

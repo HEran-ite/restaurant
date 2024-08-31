@@ -1,67 +1,390 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>🍽 HERICA Restaurant</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <img >
-    </head>
-    <body style="max-width:1400px">
-        <nav> 
-            <a href="index.html">Home</a>
-            <a href="menu.html">Our Menu</a>
-            <a href="#address">about us</a>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        </nav>
-        <intro>
-           <h1>Welcome to HERICA Restaurant</h1>
-           <p>"our mission is to delight our guests with an exceptional dining experience that encompasses impeccable service, innovative cuisine, and a comfortable ambiance. We strive to continuously push the boundaries of flavor, providing our patrons with a culinary journey that engages their senses and creates lasting memories.Come and experience the culinary artistry of Gourmet Delights, where every bite is a masterpiece and every visit is a celebration of fine dining."</p>
-           <video width="1400px" height="500px" controls="controls">
-            <source src="vid.mp4" type="video/mp4">
-           </video>
-        </intro>
-        <description>
-            <p> Our restaurant, "Delicious Bites," is a contemporary dining establishment located in the heart of a bustling city. We pride ourselves on offering a warm and inviting atmosphere, accompanied by a diverse menu inspired by both local and international flavors. Whether you're seeking a casual lunch, a romantic dinner, or a private event, Delicious Bites aims to provide an exceptional culinary experience for every guest.</p>
-            <p>
-                <ol type="1">
-                <dt>Special Features:</dt>
-                <dd><pre>1.Private Dining: Gourmet Delights offers intimate private dining spaces for special occasions, corporate gatherings, or personal celebrations. 
-                    These secluded areas provide a personalized setting for an exclusive dining experience.</pre>>
-                    <aside><img src="private-dining.jfif" style="width:30%"></aside>
-                </dd>
-
-                <dd>2. Wine Cellar: Our restaurant boasts an extensive collection of wines from renowned vineyards around the world.
-                     Wine enthusiasts can explore a curated selection, with sommeliers available to offer recommendations and
-                      pairings for a perfect culinary journey.<br>
-                      <img src="wine-cellar.jfif">
-                </dd>
-                <dd>3. Seasonal Menus: To celebrate the diversity of flavors throughout the year, Gourmet Delights introduces 
-                    seasonal menus that highlight the freshest ingredients and showcase innovative culinary creations 
-                    inspired by the changing seasons.<br>
-                    <img src="seasonal.jfif">
-                </dd>
-                <dd>4. Chef's Table: For the ultimate gastronomic experience, guests can reserve the Chef's Table. 
-                    Situated in the heart of the kitchen, this exclusive seating allows diners to witness the artistry
-                     and creativity of our talented chefs firsthand.<br>
-                     <img src="catering table.jfif">
-                    </dd>
-                <dd>5. Catering and Events: Gourmet Delights offers catering services for special events, ensuring
-                     that the exceptional flavors and quality extend beyond the restaurant.
-                      Whether it's a wedding reception, corporate function, or private party, our team works closely
-                     with clients to create a customized menu that leaves a lasting impression.<br>
-                     <img src="events.jfif">
-                    </dd>
-                </ol>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+         
+        <!-- Latest compiled and minified JavaScript -->
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+         
+        <title>Herica Restaurant</title>
+        <link rel="icon" type="images/x-icon" href="https://www.iconarchive.com/download/i90283/icons8/windows-8/City-Restaurant.ico" />
+        
+        <style>
+            body{
+                background-color: rgb(63, 62, 62);
+            }
+            .wrap{
+                margin:auto;  
+                padding-top: 100px;  
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;     
+                color:white;
                 
-                </p>
-        </description><p>
-            <adress>
-        <h2 id="address">About us </h2>
-                 <a href="https://www.google.com/maps/place/%E1%88%82%E1%88%8D%E1%89%B0%E1%8A%95+%E1%8A%A0%E1%8B%B2%E1%88%B5+%E1%8A%A0%E1%89%A0%E1%89%A3/@9.0186837,38.7646742,15z/data=!4m2!3m1!1s0x0:0x7d2d64a64dc9c36f?sa=X&ved=2ahUKEwjKv_qp8aKAAxXNgv0HHa_9A-cQ_BJ6BAhgEAA&ved=2ahUKEwjKv_qp8aKAAxXNgv0HHa_9A-cQ_BJ6BAhrEAc">Location</a>
-                 <br>
-                 <a href="mailto:name@rapidtables.com">Send mail</a><br>
-                contact: +25180499718 
-            </adress>
-        </p>
 
+            }
+        
+            .navbar{
+                display:flex;
+                padding:20px;
+                background-color: #4d001c;  
+            }
+            a{
+               
+            }
+            bar{
+                width: 30px;
+                height: 5px;
+                background-color: rgb(85, 84, 84);
+                margin: 6px 0;
+                display: block
+                
+            }
+            .dropdown{
+            
+            }
+            .name{
+                display: flex;
+                flex:1;
+                
+                padding-left: 30px;
+                font-size: 30px;
+                font-family:'Times New Roman', Times, serif;
+            }
+            button{
+                padding:5px 20px 5px 20px;
+                background-color:rgb(85, 84, 84) ;
+                border:solid;
+                border-color: rgb(255, 255, 255);
+                border-width: 2px;
+                color:white;
+            }
+
+            button:hover{
+                background-color: #4d001c;
+                color:white;
+            }
+
+            * {box-sizing: border-box}
+            body {font-family: Verdana, sans-serif; margin:0}
+            .mySlides {display: none}
+            img {vertical-align: middle;}
+
+            /* Slideshow container */
+            .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            padding-left: 10px;
+            
+            }
+
+            /* Next & previous buttons */
+            .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+            }
+
+            /* Caption text */
+            .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            }
+
+            .active, .dot:hover {
+            background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+            animation-name:fade;
+            animation-duration:10s;
+            }
+
+            @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+            }
+
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+            .prev, .next,.text {font-size: 11px}
+            }
+            
+           
+            
+            .list{
+                height:40px;
+                width: 800px;
+                background-color: rgb(85, 84, 84);
+            }
+    
+            
+            .vid{
+                text-align: center;
+                width:100%;
+                height: auto;
+            }
+
+            h2{
+                display:block;
+            }
+            .mission{
+                display:flex;
+                border: solid;
+                padding:30px;
+                margin:20px;
+                font-size: larger;
+                line-height: 30px;
+                min-width: 300px;
+                
+                
+            }
+            .signup{
+                flex:7;
+                color:white;
+            }
+           
+            .image{
+                width:350px;
+                padding:10px;
+            }
+            .adr{
+                
+            }
+
+        </style>
+    
+    </head>
+
+
+
+    <body >
+        <div class="wrap">
+            <nav class=" navbar navbar-default navbar-fixed-top"> 
+                <div class="navbar-nav navbar-left">
+                    <a class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <div>
+                            <bar></bar>
+                            <bar></bar>
+                            <bar></bar>
+                        </div>
+                        
+                        <ul class="dropdown-menu">
+                            <li class="list-box" href="#">
+                                <a class="list" href="index.html">HOME</a>
+                                <a class="list" href="menu.html">MENUS</a>
+                                <a class="list" href="order.html">ORDER ONLINE</a>
+                                <a class="list" href="cook-with-us.html">COOK WITH US</a>
+                                <a class="list" href="history.html">HISTORY</a>
+                                <a class="list" href="#address">ABOUT</a>
+                                <a class="list" href="login.html">SIGNUP/LOGIN</a>
+                                
+                            </li>
+                        </a>
+                        </ul>
+                    </a>
+    
+                </div>
+                <div class="name">
+                    Herica restaurant
+                </div>
+                <div class="navbar-nav navbar-right">
+                    <a href="signup.html"><button class="signup ">SIGN UP</button></a>
+
+                </div>
+    
+            </nav>
+            <intro>
+               <h1 style="padding-left: 10px;">WELCOME TO <br> HERICA RESTAURANT</h1><hr>
+
+               <div class="mission">Our restaurant, "Delicious Bites," is a contemporary dining establishment located in the heart of a bustling city.
+                We pride ourselves on offering a warm and inviting atmosphere, 
+                accompanied by a diverse menu inspired by both local and international flavors.
+                 Whether you're seeking a casual lunch, a romantic dinner, or a private event,
+                Delicious Bites aims to provide an exceptional culinary experience for every guest.
+               </div>
+
+               <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="https://img.freepik.com/free-photo/flat-lay-table-full-delicious-food-composition_23-2149141359.jpg?size=626&ext=jpg&uid=R109779332&semt=sph" style="width:100%">
+                    <div class="text">"our mission is to delight our guests with an exceptional dining experience that encompasses impeccable service, 
+                        innovative cuisine, and a comfortable ambiance.
+                        </div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="https://img.freepik.com/free-photo/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai_188544-9469.jpg?size=626&ext=jpg&uid=R109779332&semt=sph" style="width:100%" >
+                    <div class="text"> We strive to continuously push the boundaries of flavor, 
+                        providing our patrons with a culinary journey that engages their senses and creates lasting memories.</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="https://img.freepik.com/premium-photo/restaurant-dish-delivery-take-away-fitness-dinner-weight-loss-nutrition-boxes-top-view-free-space-your-text_187166-58926.jpg?size=626&ext=jpg&uid=R109779332&semt=sph" style="width:100%">
+                    <div class="text">Come and experience the culinary artistry of Herica,
+                        where every bite is a masterpiece and every visit is a celebration of fine dining."</div>
+                    </div>
+
+                    <div class="mySlides ">
+                        <div class="numbertext">4/ 4</div>
+                        <div class="vid">
+                        <video  controls="controls" >
+                            <source src="vid.mp4" type="video/mp4">
+                        </video>
+                        </div>
+
+                        <div class="text"></div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    </div>
+
+              
+               
+            </intro>
+            <description>
+                <div class="col">
+
+                    <div class="col-sm-6 content1-left"><h3> Private Dining</h3> Herica offers intimate private dining spaces for special occasions, corporate gatherings, or personal celebrations. 
+                        These secluded areas provide a personalized setting for an exclusive dining experience. <br><br>
+                        <a href="private-dining.html"><button> RESERVE DINNING</button></a>
+                    </div>
+                    <div class="col-sm-6 content1-right"><img class="image" src="private-dining.jfif"></div>
+                    
+                    <div class="col-sm-6"> <h3>Wine Cellar</h3> Our restaurant boasts an extensive collection of wines from renowned vineyards around the world.
+                        Wine enthusiasts can explore a curated selection, with sommeliers available to offer recommendations and
+                         pairings for a perfect culinary journey.<br> <br>
+                         <a href="https://youtu.be/RiI7A-wSofQ?si=dsIhAKvpPX3O7B5e"><button>EXPLORE</button></a>
+                    </div>
+                    
+                    <div class="col-sm-6"><img class="image" src="wine-cellar.jfif"></div>
+                
+                
+                    <div class="col-sm-6"> <h3>Seasonal Menus </h3>To celebrate the diversity of flavors throughout the year, Herica introduces 
+                        seasonal menus that highlight the freshest ingredients and showcase innovative culinary creations 
+                        inspired by the changing seasons.<br><br>
+                        <a href="menu.html"><button>PEEP THE MENU</button></a>
+                    </div>
+                    <div class="col-sm-6"><img class="image" src="seasonal.jfif"></div>
+                    <div class="col-sm-6"><h3>Chef's Table</h3> For the ultimate gastronomic experience, guests can reserve the Chef's Table. 
+                        Situated in the heart of the kitchen, this exclusive seating allows diners to witness the artistry
+                         and creativity of our talented chefs firsthand.Moreover, you can register to learn cooking from our talentd cheifs.<br><br>
+                        <a href="cook-with-us.html"><button>COOK WITH US </button></a>
+                    </div>
+                    <div class="col-sm-6"><img class="image" src="catering table.jfif"></div>
+
+                    <div class="col-sm-6" ><h3>Catering and Events</h3> Herica offers catering services for special events, 
+                          Whether it's a wedding reception, corporate function, or private party, our team works closely
+                         with clients to create a customized menu that leaves a lasting impression.<br><br>
+                         <a href="order.html"><button>ORDER US</button></a>
+                    </div>    
+                    <div class="col-sm-6"><img class="image" src="events.jfif"></div>
+            </description>
+            
+            <adress class="adr col-sm-12">
+            <h2 id="address">About us </h2>
+                     <a href="https://www.google.com/search?client=opera&q=topten+fancy+restaurant&sourceid=opera&ie=UTF-8&oe=UTF-8#rlimm=13401366916288306172">Location</a>
+                     <br>
+                     <a href="mailto:herieshetu@gmail.com">Send mail</a><br>
+                    contact: +25180499718 
+            </adress>
+          
+    
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
 </body>
 </html>
